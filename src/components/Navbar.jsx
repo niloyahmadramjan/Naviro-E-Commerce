@@ -138,7 +138,7 @@ export default function Navbar() {
 
             {/* Mega Menu */}
             <div
-              className={`absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-500 ease-in-out ${
+              className={`absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-500 ease-in z-999 ${
                 isMegaMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
