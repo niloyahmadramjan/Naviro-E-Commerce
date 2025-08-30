@@ -53,6 +53,62 @@ const products = [
     oldPrice: null,
     stock: true,
   },
+  {
+    id: 6,
+    img: 'https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg',
+    title: 'Angie’s Boomchickapop Sweet & Salty Kettle Corn',
+    price: 7.99,
+    oldPrice: null,
+    stock: true,
+  },
+  {
+    id: 7,
+    img: 'https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg',
+    title: 'Angie’s Boomchickapop Sweet & Salty Kettle Corn',
+    price: 7.99,
+    oldPrice: null,
+    stock: true,
+  },
+  {
+    id: 8,
+    img: 'https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg',
+    title: 'Angie’s Boomchickapop Sweet & Salty Kettle Corn',
+    price: 7.99,
+    oldPrice: null,
+    stock: true,
+  },
+  {
+    id: 9,
+    img: 'https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg',
+    title: 'Angie’s Boomchickapop Sweet & Salty Kettle Corn',
+    price: 7.99,
+    oldPrice: null,
+    stock: true,
+  },
+  {
+    id: 10,
+    img: 'https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg',
+    title: 'Angie’s Boomchickapop Sweet & Salty Kettle Corn',
+    price: 7.99,
+    oldPrice: null,
+    stock: true,
+  },
+  {
+    id: 11,
+    img: 'https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg',
+    title: 'Angie’s Boomchickapop Sweet & Salty Kettle Corn',
+    price: 7.99,
+    oldPrice: null,
+    stock: true,
+  },
+  {
+    id: 12,
+    img: 'https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg',
+    title: 'Angie’s Boomchickapop Sweet & Salty Kettle Corn',
+    price: 7.99,
+    oldPrice: null,
+    stock: true,
+  },
 ]
 
 export default function BestSellers() {
@@ -70,11 +126,11 @@ export default function BestSellers() {
 
       <div className="relative border border-gray-200">
         {/* Custom Navigation */}
-        <div className="absolute -left-5 top-1/2 z-10 cursor-pointer  shadow-md rounded-full p-2">
-          <FaChevronLeft className="text-gray-700 swiper-button-prev" />
+        <div className="absolute -left-5 top-1/2 z-10 cursor-pointer">
+          <FaChevronLeft className="swiper-button-prev" />
         </div>
-        <div className="absolute -right-5 top-1/2 z-10 cursor-pointer  shadow-md rounded-full p-2">
-          <FaChevronRight className="text-gray-700 swiper-button-next" />
+        <div className="absolute -right-5 top-1/2 z-10 cursor-pointer">
+          <FaChevronRight className=" swiper-button-next" />
         </div>
 
         <Swiper
@@ -87,7 +143,7 @@ export default function BestSellers() {
           breakpoints={{
             320: { slidesPerView: 1 },
             640: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
+            1024: { slidesPerView: 5 },
           }}
         >
           {products.map((p) => (
@@ -106,7 +162,7 @@ export default function BestSellers() {
                 )}
 
                 {/* Product Image */}
-                <div className="flex items-center justify-center h-40 mb-4">
+                <div className="flex items-center justify-center h-50 mb-4">
                   <img
                     src={p.img}
                     alt={p.title}
@@ -146,7 +202,7 @@ export default function BestSellers() {
                       className={`w-full py-2 text-sm font-semibold rounded-xl transition ${
                         p.stock
                           ? 'bg-yellow-400 hover:bg-yellow-500 text-gray-800'
-                          : 'bg-gray-300 cursor-not-allowed text-gray-500'
+                          : 'bg-blue-300 cursor-pointer text-gray-700'
                       }`}
                     >
                       {p.stock ? 'Add to cart' : 'Read more'}
