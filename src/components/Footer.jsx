@@ -15,7 +15,7 @@ import { AiOutlineFileProtect } from 'react-icons/ai'
 
 export default function Footer() {
   return (
-    <footer className="text-gray-800">
+    <footer className="text-gray-800 my-4">
       {/* 5 Columns */}
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
         {/* Column */}
@@ -161,7 +161,7 @@ export default function Footer() {
       {/* Contact + App Download */}
       <div className="bg-black-50 shadow-inner py-8 bg-gray-300">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className='flex gap-5 justify-center items-center'>
+          <div className='flex md:flex-row flex-col md:gap-5 justify-center items-center'>
             <h4 className="text-xl font-bold flex items-center gap-2 text-black">
               <FaPhoneAlt className="text-blue-600" /> 8 800 555-55
             </h4>
