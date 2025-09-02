@@ -4,9 +4,8 @@ import React, { useState } from 'react'
 import { FaRegHeart } from 'react-icons/fa'
 import { IoIosArrowForward, IoIosArrowRoundForward } from 'react-icons/io'
 
-export default function VegetablesProducts() {
+export default function BreakfastFood() {
   const [selectedProduct, setSelectedProduct] = useState(null)
-    
 
   // Dummy Products Data
   const products = [
@@ -100,12 +99,12 @@ export default function VegetablesProducts() {
   }
 
   return (
-    <section className="p-4 md:p-8 border border-gray-200 mb-10">
+    <section className="p-4 md:p-8 border border-gray-200 my-10">
       {/* ===================== Title Section ===================== */}
       <div className="flex justify-between items-center mb-6">
         <div>
           <h1 className="text-xl md:text-2xl text-black uppercase font-bold">
-            Fruit & Vegetables
+            Breakfast & Dairy
           </h1>
           <p className="text-gray-500 text-sm md:text-base">
             The freshest greengrocer products are waiting for you
@@ -119,7 +118,6 @@ export default function VegetablesProducts() {
       <div className="grid grid-cols-12 gap-4">
         {/* ===================== Left Banner ===================== */}
         <div className="col-span-12 lg:col-span-4 flex flex-col">
-          {/* Banner */}
           <div
             className="h-64 md:h-80 w-full bg-center bg-cover rounded-md overflow-hidden"
             style={{
@@ -132,7 +130,7 @@ export default function VegetablesProducts() {
                 Weekly Discount on
               </h3>
               <h2 className="text-xl md:text-2xl text-black font-semibold pb-2">
-                Fruits and Vegetables
+                Breakfast and Dairy
               </h2>
               <p className="text-sm md:text-md text-gray-700 mb-3">
                 Bacola Weekend Discount
@@ -143,55 +141,62 @@ export default function VegetablesProducts() {
             </div>
           </div>
 
-          {/* Fruits & Vegetables Section */}
+          {/* Dairy & Eggs section */}
           <div className="flex flex-col justify-between flex-1 mt-6">
             <div>
               <h2 className="text-xl font-bold mb-5 text-gray-800">
-                Fruits & Vegetables
+                Dairy & Eggs
               </h2>
 
+              {/* Category Items */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Link
-                  href="/herbs-and-seasonings"
+                  href="/butter-and-margarine"
                   className="text-gray-700 hover:text-violet-600 transition"
                 >
-                  Herbs & Seasonings
+                  Butter and Margarine
                 </Link>
                 <Link
-                  href="/packaged-produce"
+                  href="/cheese"
                   className="text-gray-700 hover:text-violet-600 transition"
                 >
-                  Packaged Produce
+                  Cheese
                 </Link>
                 <Link
-                  href="/party-trays"
+                  href="/eggs-substitutes"
                   className="text-gray-700 hover:text-violet-600 transition"
                 >
-                  Party Trays
+                  Eggs Substitutes
                 </Link>
                 <Link
-                  href="/cuts-and-sprouts"
+                  href="/honey"
                   className="text-gray-700 hover:text-violet-600 transition"
                 >
-                  Cuts & Sprouts
+                  Honey
                 </Link>
                 <Link
-                  href="/exotic-fruits-and-veggies"
+                  href="/marmalades"
                   className="text-gray-700 hover:text-violet-600 transition"
                 >
-                  Exotic Fruits & Veggies
+                  Marmalades
                 </Link>
                 <Link
-                  href="/fresh-fruits"
+                  href="/milk-and-flavoured-milk"
                   className="text-gray-700 hover:text-violet-600 transition"
                 >
-                  Fresh Fruits
+                  Milk & Flavoured Milk
                 </Link>
                 <Link
-                  href="/fresh-vegetables"
+                  href="/sour-cream-and-dips"
                   className="text-gray-700 hover:text-violet-600 transition"
                 >
-                  Fresh Vegetables
+                  Sour Cream and Dips
+                </Link>
+                <Link
+                  href="/yogurt"
+                  className="text-gray-700 hover:text-violet-600 transition"
+                >
+                  Yogurt
                 </Link>
               </div>
             </div>
@@ -199,10 +204,10 @@ export default function VegetablesProducts() {
             {/* Bottom CTA */}
             <div className="mt-6">
               <Link
-                href="/fruits-and-vegetables"
+                href="/dairy-and-eggs"
                 className="flex items-center gap-2 text-violet-600 hover:text-violet-800 font-semibold transition"
               >
-                Shop All Fruits & Vegetables
+                Shop All Dairy & Eggs
                 <IoIosArrowForward size={20} />
               </Link>
             </div>
@@ -297,7 +302,6 @@ export default function VegetablesProducts() {
         </div>
       </div>
 
-      
       {/* ===================== Product Modal ===================== */}
       {selectedProduct && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/60 z-50 px-4">
