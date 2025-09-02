@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import { Navigation } from 'swiper/modules'
-import { FaChevronLeft, FaChevronRight, FaEye, FaRegHeart } from 'react-icons/fa'
+import { FaChevronLeft, FaChevronRight, FaRegHeart } from 'react-icons/fa'
 import toast, { Toaster } from 'react-hot-toast'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 
@@ -54,7 +54,7 @@ export default function BestSellers() {
   }
 
   return (
-    <div className="w-full py-8">
+    <div className="w-full py-8 overflow-hidden">
       <Toaster />
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold">BEST SELLERS</h2>
